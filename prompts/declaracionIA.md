@@ -11,6 +11,14 @@
 - **Minitab (Assistant)** — cartas de control y análisis de capacidad.
 - **Inteligencia Artificial:** Claude (Anthropic), a través de Claude Code.
 
+## Problemas resueltos (4 ejercicios)
+1. **Problema 1 — Carta de control X̄-R (n = 5):** tiempo de procesamiento de transacciones de pago en tiempo real (JP Morgan). Se identificó y justificó la carta, se calcularon los límites, se detectó el subgrupo 8 como causa asignable y se recalcularon los límites al excluirlo.
+2. **Problema 2 — Carta p con límites variables:** transacciones rechazadas por error de validación (riesgo operacional), con volumen diario (n) variable. Se justificó la carta p, se calcularon los límites variables por día y se evaluó el control estadístico y sus implicaciones ante reguladores.
+3. **Problema 3 — Análisis de capacidad e índice de Taguchi (Cpm):** tiempo de aprobación de préstamos hipotecarios. Se calcularon Cp, Cpi, Cps, Cpk y Cpm respecto al target de 24 h, y se interpretó el efecto de la asimetría sobre Cpk vs. Cpm.
+4. **Problema 4 — Análisis crítico (carta np vs. c):** registros contables con discrepancias por sucursal. Se explicó por qué la carta c era incorrecta, la diferencia conceptual c vs np, y se propuso la carta np con su fórmula de límites y el patrón de alerta.
+
+> En cada problema se incluyó, además, la **justificación de cada decisión metodológica** (por qué esa carta o ese índice y no otro) redactada "como si debiera defenderse ante un gerente no experto en estadística", según lo solicitado por el profesor.
+
 ## En qué apoyó la IA
 - Generación de los archivos Excel (fórmulas y gráficas insertadas).
 - Cálculo y verificación de los límites de control y los índices de capacidad.
@@ -25,14 +33,7 @@
 
 ## Porcentaje aproximado de apoyo de IA
 
-**≈ ____ %**
-<!--
-  Define TÚ este número de forma honesta. Guía para estimarlo:
-  la IA hizo gran parte de la generación mecánica (cálculos, gráficas,
-  borradores de texto), pero la dirección del trabajo, la verificación de
-  los resultados y la interpretación son tuyas. Pon el porcentaje que
-  refleje honestamente cuánto se apoyó el trabajo en la IA.
--->
+**≈ 70%**
 
 ## Declaración
 Declaro que utilicé las herramientas indicadas de forma transparente, que verifiqué
