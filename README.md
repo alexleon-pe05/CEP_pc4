@@ -20,7 +20,7 @@ Minitab, interpretación y conclusiones.
 
 ## Cómo verlo
 
-- **Rápido:** abrir `index.html` con doble clic.
+-*Rápido:** abrir `index.html` con doble clic...
 - **Recomendado** (para que funcione la carga de datos en `anexos.html`): levantar un
   servidor local desde esta carpeta y abrir la dirección que indique:
 
