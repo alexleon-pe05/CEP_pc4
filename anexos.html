@@ -1,0 +1,323 @@
+<!DOCTYPE html><html class="light" lang="es"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Examen PC4 - Anexos | Control Estadístico</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-dim": "#d9dadb",
+                        "surface-container-highest": "#e1e3e4",
+                        "surface-bright": "#f8f9fa",
+                        "on-primary-fixed": "#410000",
+                        "tertiary": "#053506",
+                        "inverse-surface": "#2e3132",
+                        "surface-container-high": "#e7e8e9",
+                        "primary": "#610000",
+                        "surface": "#f8f9fa",
+                        "on-secondary-fixed-variant": "#114d5d",
+                        "on-primary-fixed-variant": "#920703",
+                        "on-secondary-fixed": "#001f28",
+                        "primary-fixed-dim": "#ffb4a8",
+                        "primary-container": "#8b0000",
+                        "on-error-container": "#93000a",
+                        "surface-tint": "#b52619",
+                        "secondary-fixed": "#b6ebfe",
+                        "primary-fixed": "#ffdad4",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed": "#002201",
+                        "secondary-container": "#b3e8fb",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#23501e",
+                        "on-background": "#191c1d",
+                        "tertiary-fixed": "#bcf0ae",
+                        "secondary": "#306576",
+                        "background": "#f8f9fa",
+                        "on-surface": "#191c1d",
+                        "tertiary-container": "#1f4c1b",
+                        "surface-container": "#edeeef",
+                        "tertiary-fixed-dim": "#a1d494",
+                        "inverse-primary": "#ffb4a8",
+                        "surface-variant": "#e1e3e4",
+                        "on-secondary-container": "#34697a",
+                        "error": "#ba1a1a",
+                        "inverse-on-surface": "#f0f1f2",
+                        "on-secondary": "#ffffff",
+                        "surface-container-low": "#f3f4f5",
+                        "outline": "#8e706b",
+                        "on-tertiary": "#ffffff",
+                        "outline-variant": "#e3beb8",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-container": "#8abc7e",
+                        "secondary-fixed-dim": "#9acee1",
+                        "on-primary-container": "#ff907f",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface-variant": "#5a403c"
+                    },
+                    "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
+                    "spacing": { "base": "8px", "md": "16px", "container-margin": "24px", "xs": "4px", "sm": "12px", "xl": "32px", "gutter": "16px", "lg": "24px" },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Inter"], "body-sm": ["Inter"], "display-lg": ["Inter"],
+                        "headline-sm": ["Inter"], "label-md": ["Inter"], "headline-md": ["Inter"],
+                        "title-lg": ["Inter"], "mono-data": ["JetBrains Mono"], "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "display-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "title-lg": ["18px", { "lineHeight": "24px", "fontWeight": "600" }],
+                        "mono-data": ["13px", { "lineHeight": "18px", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body class="bg-background text-on-background font-body-md antialiased min-h-screen">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 right-0 z-40 bg-gray-900 border-b border-gray-700 flex items-center px-lg h-16">
+<a class="flex items-center gap-sm shrink-0 no-underline" href="index.html">
+<div class="w-9 h-9 rounded-full bg-white flex items-center justify-center p-0.5 shadow shrink-0">
+<img alt="UNI Logo" class="w-full h-full object-contain rounded-full" src="imagenes/logo/uni.png"/>
+</div>
+<span class="font-bold text-white text-sm hidden lg:block">Universidad Nacional de Ingeniería</span>
+</a>
+<div class="h-6 w-px bg-gray-700 mx-md shrink-0"></div>
+<div class="flex items-center gap-xs overflow-x-auto">
+<a class="flex items-center gap-xs px-sm py-[6px] rounded-lg text-gray-400 hover:text-white hover:bg-white/5 font-medium text-sm uppercase transition-all duration-150 shrink-0" href="problema1.html"><span class="w-6 h-6 rounded-full bg-gray-700 text-gray-300 flex items-center justify-center font-bold text-xs shrink-0">1</span>Problema 1</a>
+<a class="flex items-center gap-xs px-sm py-[6px] rounded-lg text-gray-400 hover:text-white hover:bg-white/5 font-medium text-sm uppercase transition-all duration-150 shrink-0" href="problema2.html"><span class="w-6 h-6 rounded-full bg-gray-700 text-gray-300 flex items-center justify-center font-bold text-xs shrink-0">2</span>Problema 2</a>
+<a class="flex items-center gap-xs px-sm py-[6px] rounded-lg text-gray-400 hover:text-white hover:bg-white/5 font-medium text-sm uppercase transition-all duration-150 shrink-0" href="problema3.html"><span class="w-6 h-6 rounded-full bg-gray-700 text-gray-300 flex items-center justify-center font-bold text-xs shrink-0">3</span>Problema 3</a>
+<a class="flex items-center gap-xs px-sm py-[6px] rounded-lg text-gray-400 hover:text-white hover:bg-white/5 font-medium text-sm uppercase transition-all duration-150 shrink-0" href="problema4.html"><span class="w-6 h-6 rounded-full bg-gray-700 text-gray-300 flex items-center justify-center font-bold text-xs shrink-0">4</span>Problema 4</a>
+<a class="flex items-center gap-xs px-sm py-[6px] rounded-lg text-gray-400 hover:text-white hover:bg-white/5 font-medium text-sm uppercase transition-all duration-150 shrink-0" href="problema5.html"><span class="w-6 h-6 rounded-full bg-gray-700 text-gray-300 flex items-center justify-center font-bold text-xs shrink-0">5</span>Problema 5</a>
+<a class="flex items-center gap-xs px-sm py-[6px] rounded-lg text-gray-400 hover:text-white hover:bg-white/5 font-medium text-sm uppercase transition-all duration-150 shrink-0" href="problema6.html"><span class="w-6 h-6 rounded-full bg-gray-700 text-gray-300 flex items-center justify-center font-bold text-xs shrink-0">6</span>Problema 6</a>
+<a class="flex items-center gap-xs px-sm py-[6px] rounded-lg bg-[#b3e8fb] text-gray-900 font-semibold text-sm uppercase transition-all duration-150 shrink-0" href="anexos.html"><span class="material-symbols-outlined text-[16px]">attach_file</span>Anexo</a>
+</div>
+</nav>
+<!-- Main Content Area -->
+<main class="pt-16 px-container-margin pb-container-margin md:px-xl md:pb-xl space-y-xl">
+<!-- Banner -->
+<div class="relative rounded-xl overflow-hidden mb-xl flex items-center" style="background: #eef4fb; min-height: 128px; border: 1px solid #cce0f5;">
+<div class="w-14 h-14 rounded-full bg-white shadow flex items-center justify-center mx-lg shrink-0" style="border: 1px solid #cce0f5;">
+<span class="material-symbols-outlined" style="font-size: 28px; color: #2d7fd4; font-variation-settings: 'FILL' 1;">analytics</span>
+</div>
+<div class="flex-1 py-lg pr-lg">
+<h2 class="font-bold text-[#1a2a4a] leading-tight mb-xs gradient-title" style="font-size: 28px;">Examen PC4</h2>
+<p class="font-semibold mb-1" style="color: #2d7fd4; font-size: 16px;">Control Estadístico</p>
+<div class="h-0.5 mb-2" style="width: 36px; background: #2d7fd4;"></div></div>
+<div class="absolute right-0 top-0 h-full w-72 overflow-hidden pointer-events-none" style="opacity: 0.18;">
+<svg viewBox="0 0 288 128" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+<circle cx="20" cy="18" r="2.5" fill="#2d7fd4"/><circle cx="55" cy="12" r="2.5" fill="#2d7fd4"/><circle cx="90" cy="24" r="2.5" fill="#2d7fd4"/><circle cx="125" cy="8" r="2.5" fill="#2d7fd4"/><circle cx="160" cy="20" r="2.5" fill="#2d7fd4"/><circle cx="195" cy="14" r="2.5" fill="#2d7fd4"/><circle cx="230" cy="10" r="2.5" fill="#2d7fd4"/><circle cx="265" cy="18" r="2.5" fill="#2d7fd4"/>
+<circle cx="20" cy="50" r="2.5" fill="#2d7fd4"/><circle cx="55" cy="44" r="2.5" fill="#2d7fd4"/><circle cx="90" cy="56" r="2.5" fill="#2d7fd4"/><circle cx="125" cy="40" r="2.5" fill="#2d7fd4"/><circle cx="160" cy="52" r="2.5" fill="#2d7fd4"/><circle cx="195" cy="46" r="2.5" fill="#2d7fd4"/><circle cx="230" cy="42" r="2.5" fill="#2d7fd4"/>
+<polyline points="20,100 65,65 120,82 175,45 240,58 288,38" stroke="#2d7fd4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="20" cy="100" r="5.5" fill="#2d7fd4"/><circle cx="65" cy="65" r="5.5" fill="#2d7fd4"/><circle cx="120" cy="82" r="5.5" fill="#2d7fd4"/><circle cx="175" cy="45" r="5.5" fill="#2d7fd4"/><circle cx="240" cy="58" r="5.5" fill="#2d7fd4"/>
+</svg>
+</div>
+</div>
+<div class="grid grid-cols-12 gap-lg">
+<!-- Information Callout -->
+<div class="col-span-12">
+<div class="bg-[#2d7fd4]/5 border-l-4 border-[#2d7fd4] p-md flex items-start gap-md">
+<span class="material-symbols-outlined text-[#2d7fd4] mt-xs">info</span>
+<div>
+<h4 class="font-title-lg text-title-lg text-[#1a2a4a] font-bold gradient-title">Archivos de datos</h4>
+<p class="text-body-sm text-on-surface-variant max-w-4xl">
+    Para cada problema del examen se adjunta el archivo de datos en formato Excel
+    (<span class="font-mono-data text-xs bg-surface-container-high px-1">datos.xlsx</span>),
+    base de la resolución en Excel y Minitab. Descárgalo con el botón de cada tarjeta.
+</p>
+</div>
+</div>
+</div>
+<div class="col-span-12 space-y-xl">
+<!-- Problema 1 -->
+<section class="bg-white border border-outline-variant rounded shadow-sm overflow-hidden">
+    <div class="flex items-center gap-md px-lg py-md" style="background: #eef4fb; border-bottom: 1px solid #cce0f5;">
+        <div class="w-10 h-10 rounded-full bg-white shadow flex items-center justify-center shrink-0" style="border: 1px solid #cce0f5;">
+            <span class="material-symbols-outlined" style="font-size: 20px; color: #2d7fd4; font-variation-settings: 'FILL' 1;">table_chart</span>
+        </div>
+        <h2 class="font-bold text-[#1a2a4a] gradient-title" style="font-size: 20px;">Problema 1</h2>
+    </div>
+<div class="p-lg grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-lg">
+<!-- Archivo Excel -->
+<a href="imagenes/problema1/datos.xlsx" download class="tool-card asset-card no-underline" data-tool="excel">
+    <div class="asset-card__icon"><span class="material-symbols-outlined">table_chart</span></div>
+    <span class="tool-badge excel">Excel</span>
+    <div>
+        <p class="asset-card__title">Archivo de datos</p>
+        <p class="asset-card__file">datos.xlsx</p>
+    </div>
+    <div class="asset-card__actions">
+        <span class="asset-btn asset-btn--primary"><span class="material-symbols-outlined">download</span>Descargar</span>
+    </div>
+</a>
+</div>
+</section>
+<!-- Problema 2 -->
+<section class="bg-white border border-outline-variant rounded shadow-sm overflow-hidden">
+    <div class="flex items-center gap-md px-lg py-md" style="background: #eef4fb; border-bottom: 1px solid #cce0f5;">
+        <div class="w-10 h-10 rounded-full bg-white shadow flex items-center justify-center shrink-0" style="border: 1px solid #cce0f5;">
+            <span class="material-symbols-outlined" style="font-size: 20px; color: #2d7fd4; font-variation-settings: 'FILL' 1;">table_chart</span>
+        </div>
+        <h2 class="font-bold text-[#1a2a4a] gradient-title" style="font-size: 20px;">Problema 2</h2>
+    </div>
+<div class="p-lg grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-lg">
+<!-- Archivo Excel -->
+<a href="imagenes/problema2/datos.xlsx" download class="tool-card asset-card no-underline" data-tool="excel">
+    <div class="asset-card__icon"><span class="material-symbols-outlined">table_chart</span></div>
+    <span class="tool-badge excel">Excel</span>
+    <div>
+        <p class="asset-card__title">Archivo de datos</p>
+        <p class="asset-card__file">datos.xlsx</p>
+    </div>
+    <div class="asset-card__actions">
+        <span class="asset-btn asset-btn--primary"><span class="material-symbols-outlined">download</span>Descargar</span>
+    </div>
+</a>
+</div>
+</section>
+<!-- Problema 3 -->
+<section class="bg-white border border-outline-variant rounded shadow-sm overflow-hidden">
+    <div class="flex items-center gap-md px-lg py-md" style="background: #eef4fb; border-bottom: 1px solid #cce0f5;">
+        <div class="w-10 h-10 rounded-full bg-white shadow flex items-center justify-center shrink-0" style="border: 1px solid #cce0f5;">
+            <span class="material-symbols-outlined" style="font-size: 20px; color: #2d7fd4; font-variation-settings: 'FILL' 1;">table_chart</span>
+        </div>
+        <h2 class="font-bold text-[#1a2a4a] gradient-title" style="font-size: 20px;">Problema 3</h2>
+    </div>
+<div class="p-lg grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-lg">
+<!-- Archivo Excel -->
+<a href="imagenes/problema3/datos.xlsx" download class="tool-card asset-card no-underline" data-tool="excel">
+    <div class="asset-card__icon"><span class="material-symbols-outlined">table_chart</span></div>
+    <span class="tool-badge excel">Excel</span>
+    <div>
+        <p class="asset-card__title">Archivo de datos</p>
+        <p class="asset-card__file">datos.xlsx</p>
+    </div>
+    <div class="asset-card__actions">
+        <span class="asset-btn asset-btn--primary"><span class="material-symbols-outlined">download</span>Descargar</span>
+    </div>
+</a>
+</div>
+</section>
+<!-- Problema 4 -->
+<section class="bg-white border border-outline-variant rounded shadow-sm overflow-hidden">
+    <div class="flex items-center gap-md px-lg py-md" style="background: #eef4fb; border-bottom: 1px solid #cce0f5;">
+        <div class="w-10 h-10 rounded-full bg-white shadow flex items-center justify-center shrink-0" style="border: 1px solid #cce0f5;">
+            <span class="material-symbols-outlined" style="font-size: 20px; color: #2d7fd4; font-variation-settings: 'FILL' 1;">table_chart</span>
+        </div>
+        <h2 class="font-bold text-[#1a2a4a] gradient-title" style="font-size: 20px;">Problema 4</h2>
+    </div>
+<div class="p-lg grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-lg">
+<!-- Archivo Excel -->
+<a href="imagenes/problema4/datos.xlsx" download class="tool-card asset-card no-underline" data-tool="excel">
+    <div class="asset-card__icon"><span class="material-symbols-outlined">table_chart</span></div>
+    <span class="tool-badge excel">Excel</span>
+    <div>
+        <p class="asset-card__title">Archivo de datos</p>
+        <p class="asset-card__file">datos.xlsx</p>
+    </div>
+    <div class="asset-card__actions">
+        <span class="asset-btn asset-btn--primary"><span class="material-symbols-outlined">download</span>Descargar</span>
+    </div>
+</a>
+</div>
+</section>
+<!-- Problema 5 -->
+<section class="bg-white border border-outline-variant rounded shadow-sm overflow-hidden">
+    <div class="flex items-center gap-md px-lg py-md" style="background: #eef4fb; border-bottom: 1px solid #cce0f5;">
+        <div class="w-10 h-10 rounded-full bg-white shadow flex items-center justify-center shrink-0" style="border: 1px solid #cce0f5;">
+            <span class="material-symbols-outlined" style="font-size: 20px; color: #2d7fd4; font-variation-settings: 'FILL' 1;">table_chart</span>
+        </div>
+        <h2 class="font-bold text-[#1a2a4a] gradient-title" style="font-size: 20px;">Problema 5</h2>
+    </div>
+<div class="p-lg grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-lg">
+<!-- Archivo Excel -->
+<a href="imagenes/problema5/datos.xlsx" download class="tool-card asset-card no-underline" data-tool="excel">
+    <div class="asset-card__icon"><span class="material-symbols-outlined">table_chart</span></div>
+    <span class="tool-badge excel">Excel</span>
+    <div>
+        <p class="asset-card__title">Archivo de datos</p>
+        <p class="asset-card__file">datos.xlsx</p>
+    </div>
+    <div class="asset-card__actions">
+        <span class="asset-btn asset-btn--primary"><span class="material-symbols-outlined">download</span>Descargar</span>
+    </div>
+</a>
+</div>
+</section>
+<!-- Problema 6 -->
+<section class="bg-white border border-outline-variant rounded shadow-sm overflow-hidden">
+    <div class="flex items-center gap-md px-lg py-md" style="background: #eef4fb; border-bottom: 1px solid #cce0f5;">
+        <div class="w-10 h-10 rounded-full bg-white shadow flex items-center justify-center shrink-0" style="border: 1px solid #cce0f5;">
+            <span class="material-symbols-outlined" style="font-size: 20px; color: #2d7fd4; font-variation-settings: 'FILL' 1;">table_chart</span>
+        </div>
+        <h2 class="font-bold text-[#1a2a4a] gradient-title" style="font-size: 20px;">Problema 6</h2>
+    </div>
+<div class="p-lg grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-lg">
+<!-- Archivo Excel -->
+<a href="imagenes/problema6/datos.xlsx" download class="tool-card asset-card no-underline" data-tool="excel">
+    <div class="asset-card__icon"><span class="material-symbols-outlined">table_chart</span></div>
+    <span class="tool-badge excel">Excel</span>
+    <div>
+        <p class="asset-card__title">Archivo de datos</p>
+        <p class="asset-card__file">datos.xlsx</p>
+    </div>
+    <div class="asset-card__actions">
+        <span class="asset-btn asset-btn--primary"><span class="material-symbols-outlined">download</span>Descargar</span>
+    </div>
+</a>
+</div>
+</section>
+<!-- Bibliografía e IA utilizada -->
+<section class="bg-white border border-outline-variant rounded shadow-sm overflow-hidden">
+    <div class="flex items-center gap-md px-lg py-md" style="background: #eef4fb; border-bottom: 1px solid #cce0f5;">
+        <div class="w-10 h-10 rounded-full bg-white shadow flex items-center justify-center shrink-0" style="border: 1px solid #cce0f5;">
+            <span class="material-symbols-outlined" style="font-size: 20px; color: #2d7fd4; font-variation-settings: 'FILL' 1;">menu_book</span>
+        </div>
+        <h2 class="font-bold text-[#1a2a4a] gradient-title" style="font-size: 20px;">Bibliografía e IA utilizada</h2>
+    </div>
+    <div class="p-lg space-y-lg">
+        <!-- IA -->
+        <div>
+            <h3 class="font-semibold text-[#1a2a4a] mb-sm flex items-center gap-xs"><span class="material-symbols-outlined text-[18px]" style="color:#2d7fd4;">smart_toy</span>Inteligencia Artificial</h3>
+            <p class="text-body-sm text-on-surface-variant max-w-4xl mb-sm">
+                En esta práctica se utilizó <strong>Claude (Anthropic)</strong> como herramienta de
+                apoyo, de forma declarada y transparente, tal como lo permite la guía oficial. Los
+                cálculos y borradores fueron revisados y verificados por el alumno; <strong>la
+                interpretación de los resultados es propia</strong>.
+            </p>
+            <div class="flex flex-wrap gap-sm">
+                <a href="prompts/declaracionIA.md" class="no-underline inline-flex items-center gap-xs px-sm py-[6px] rounded-lg text-white text-sm font-medium" style="background:#2d7fd4;"><span class="material-symbols-outlined text-[16px]">description</span>declaracionIA.md</a>
+                <a href="prompts/prompts.md" class="no-underline inline-flex items-center gap-xs px-sm py-[6px] rounded-lg text-white text-sm font-medium" style="background:#2d7fd4;"><span class="material-symbols-outlined text-[16px]">forum</span>prompts.md</a>
+            </div>
+        </div>
+        <!-- Bibliografía -->
+        <div>
+            <h3 class="font-semibold text-[#1a2a4a] mb-sm flex items-center gap-xs"><span class="material-symbols-outlined text-[18px]" style="color:#2d7fd4;">menu_book</span>Bibliografía</h3>
+            <ul class="list-disc pl-6 text-body-sm text-on-surface-variant space-y-1 max-w-4xl">
+                <li>Montgomery, D. C. <em>Introducción al Control Estadístico de la Calidad</em>. Limusa Wiley.</li>
+                <li>Gutiérrez Pulido, H.; de la Vara Salazar, R. <em>Control Estadístico de la Calidad y Seis Sigma</em>. McGraw-Hill.</li>
+                <li>Material del curso — Sesión 12 (gráficas por variables), Sesión 13 (atributos) y Sesión 14 (análisis de capacidad).</li>
+                <li>Minitab — Documentación del <em>Assistant</em> (cartas de control y análisis de capacidad).</li>
+            </ul>
+        </div>
+    </div>
+</section>
+</div>
+</div>
+</main>
+<script src="js/main.js"></script>
+</body></html>

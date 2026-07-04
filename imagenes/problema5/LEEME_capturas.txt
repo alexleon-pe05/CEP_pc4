@@ -1,0 +1,18 @@
+Carpeta: Problema 5  (Examen PC4)
+========================================
+Coloca aqui las imagenes con estos nombres EXACTOS:
+
+  OBLIGATORIAS:
+   - enunciado.png          -> enunciado del problema
+   - formula_5.png          -> formulacion de hipotesis (la genera el flujo Python)
+   - interpretacion_5.png   -> interpretaciones y conclusiones (la genera el flujo Python)
+
+  CAPTURAS (hasta 4 por herramienta, pueden faltar):
+   - excel_1.png ... excel_4.png       -> capturas de Excel
+   - minitab_1.png ... minitab_4.png   -> capturas de Minitab
+
+  DATOS (opcional, para descarga en Anexos):
+   - datos.xlsx
+
+Ya NO se usan Python ni R en la solucion del examen PC4.
+Las imagenes que no existan simplemente no se muestran.

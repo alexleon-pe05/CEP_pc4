@@ -1,0 +1,18 @@
+Carpeta MINITAB — PC4
+=====================
+
+Aqui va el proyecto de Minitab del examen:
+
+    proyecto.mpx
+
+Como generarlo (lo haces tu en Minitab):
+1. Abre Minitab y pega la tabla de datos que esta al final del .xlsx de cada
+   problema (bloque "TABLA PARA MINITAB", con la ruta del menu indicada).
+2. Corre la carta / analisis que pida el problema (usar Minitab Assistant):
+   - Cartas de control: Estadisticas > Graficas de control > ...
+   - Capacidad:         Estadisticas > Herramientas de calidad > Analisis de capacidad > Normal
+3. Guarda el proyecto como  proyecto.mpx  DENTRO de esta carpeta.
+4. (Opcional) exporta las capturas de Minitab a imagenes/problemaN/ como
+   minitab_1.png ... minitab_4.png para que se vean en la web.
+
+Nota: el .mpx es un archivo binario de Minitab; no se genera con Python.
