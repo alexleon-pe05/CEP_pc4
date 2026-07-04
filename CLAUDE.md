@@ -66,6 +66,8 @@ Todas las imágenes llevan la clase `img-lightbox` para ampliarse con clic.
 
 Las capturas de Excel y Minitab se pegan manualmente; `formula_N.png` e `interpretacion_N.png` las genera el flujo de `CONTROL PC4/` (uso interno), concretamente el script `CONTROL PC4/<fase>/problema N/reporte_N.py`, que escribe **directamente en `imagenes/problemaN/`**. Los **`.xlsx` de solución** van en `codigos/problemaN/` para descargarse desde `anexos.html`. El sitio solo muestra las imágenes y ofrece los archivos.
 
+> **Descarga en Anexos (convención de nombre fijo):** `anexos.html` enlaza cada Excel con `href="codigos/problemaN/solucion.xlsx"` (nombre **fijo** `solucion.xlsx`, más `download="PC4_ProblemaN_solucion.xlsx"` para el nombre amigable). Como es un sitio estático no puede listar carpetas: **el archivo debe llamarse exactamente `solucion.xlsx`** dentro de `codigos/problemaN/` o el enlace da 404. (Antes los `href` apuntaban por error a `imagenes/problemaN/datos.xlsx`; se corrigió el 2026-07-03.)
+
 - **`formula_N.png` / `interpretacion_N.png` vienen SIN título dentro de la imagen:** el encabezado lo pone el propio HTML (el slot "Planteamiento" y el callout "Interpretaciones y Conclusiones"), que además **se cambia por problema** según lo que pida. No dupliques el título dentro de la imagen. El contenido va justificado.
 - **Las capturas de Excel (`excel_*.png`) deben incluir la gráfica de control / histograma**, no solo la tabla: en este curso el Excel siempre lleva la misma gráfica que daría Minitab.
 
